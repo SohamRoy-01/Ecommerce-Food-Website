@@ -1,0 +1,259 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root {
+  --navbar-height: 50px;
+}
+
+
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top:0px;
+  
+  /* justify-content: center; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+  }
+
+/* Navigation bar logo and image */
+#logo {
+    margin: 5px 4px;
+  }
+  #logo img {
+    margin: -20px 5px;
+    
+  }
+/* navbar list styling  */
+/* #navbar {
+  position: relative;
+} */
+
+#navbar ul {
+  display: flex;
+  font-family: 'PT Serif', serif;
+}
+
+
+#navbar ul li {
+  /* display: flex; */
+  list-style: none;
+  font-size: 1.2rem;
+ 
+  
+}
+
+#navbar ul li a {
+  color: rgb(212, 105, 34);
+  display: block;
+  border-radius: 20px;
+  padding: 3px 22px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+#navbar ul li a:hover {
+  color: rgb(107, 207, 207);
+  background-color: rgba(161, 69, 88, 0.555);
+  font-weight: bold;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:30px 180px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(img/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: rgb(148, 34, 34);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home p{
+    color: rgb(24, 14, 14);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+/* Services Center  */
+#services{
+    margin: 3px;
+    display: flex;
+    padding-bottom: 20px;
+    
+
+}
+#services .box{
+    border: 1px solid rgb(14, 13, 13);
+    margin: 3px 30px;
+    padding: 20px 20px;
+    border-radius: 28px;
+    background: rgba(231, 156, 129, 0.685);
+    /* width: 260px; */
+}
+#services .box img{
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p{
+  font-family: 'Bree Serif', serif;
+  
+}
+#services{}
+#services{}
+#services{}
+
+/* Client section */
+
+#client-section{
+      /* height: 240px; */
+      padding-bottom: 8px;
+      /* width: 100%; */
+      
+}
+#client-section::before{
+  content: "";
+  position:absolute;
+  background: url('img/breakfast.jpg') no-repeat center center/cover ;
+  /* border: 2px solid brown; */
+  width: 100%;
+  height: 44%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.client-item{
+    padding: 0px 14px;
+}
+/* #clients img{
+  /* height: 50px;
+} */
+
+/* contact section  */
+
+#contact{
+  position: relative;
+  /* top: 25px; */
+  /* height: 80px; */
+
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 32px;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("img/contact.jpg") no-repeat center center/cover;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea{
+width: 100%;
+padding: 0.3rem ;
+border-radius: 11px;
+font-size: 1.1rem;
+}
+
+#contact-box form{
+  width: 30%;
+
+}
+#contact-box label{
+  font-family: 'PT Serif', serif;
+  font-size: 1rem;
+
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+
+/* utility classes */
+h1.h-primary.center{
+  padding: 40px 0;
+
+}
+
+.h-primary{
+    /* height:100px ; */
+    font-family: 'PT Serif', serif;
+    font-size:2.8rem;
+    padding: 14px;
+    /* height: 170px; */
+}
+.h-secondary{
+    font-family: 'PT Serif', serif;
+    font-size:1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
