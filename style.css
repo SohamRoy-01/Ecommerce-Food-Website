@@ -98,20 +98,23 @@ html{
     left: 0px;
     width: 100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.685;
+    
 }
 #home h1{
     color: rgb(148, 34, 34);
     text-align: center;
     font-family: 'Bree Serif', serif;
+    font-weight: bold;
     
 }
 #home p{
-    color: rgb(24, 14, 14);
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
-    
+    font-size: 2.0rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(18, 187, 164);
 }
 /* Services Center  */
 #services{
